@@ -5,6 +5,8 @@ export const metadata: Metadata = {
 };
 
 export default async function InvoicesPage() {
+  await new Promise((resolve) => setTimeout(resolve, 3000));
+
   return (
     <main className="p-6">
       <h1 className="mb-4 text-xl md:text-2xl">Invoices</h1>
